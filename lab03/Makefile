@@ -15,6 +15,9 @@ all: $(PROGS)
 libpoem.so: libpoem.o
 	$(CC) -o $@ -shared $^ $(LDFLAGS)
 
+libsolver.so: libsolver.o
+	$(CC) -o $@ -shared $^
+
 test:
 	LD_LIBRARY_PATH=`pwd` LD_PRELOAD=./libsolver.so ./chals
 
