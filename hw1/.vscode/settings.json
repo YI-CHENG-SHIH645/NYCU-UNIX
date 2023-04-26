@@ -1,7 +1,0 @@
-{
-  "files.associations": {
-    "elf.h": "c",
-    "gelf.h": "c",
-    "fcntl.h": "c"
-  }
-}
